@@ -1,5 +1,3 @@
-// ====== PARTE 1: RECEBER A IDADE E PESO DE 12 PESSOAS ======
-// O script seleciona o espaço do HTML e cria os 12 campos automaticamente
 let divPessoas = document.getElementById("pessoas");
 let conteudoInputs = ""; 
 
@@ -29,10 +27,10 @@ function verificar() {
       
         if (idad >= 18 && idad <= 60 && pes > 50) {
             podemDoar++;
-            texto += `Pessoa ${i}: Poderá doar sangue.<br>`; // Mensagem individual
+            texto += `Pessoa ${i}: Poderá doar sangue.<br>`;
         } else {
             naoPodemDoar++;
-            texto += `Pessoa ${i}: Não poderá doar sangue.<br>`; // Mensagem individual
+            texto += `Pessoa ${i}: Não poderá doar sangue.<br>`;
         }
     }
 

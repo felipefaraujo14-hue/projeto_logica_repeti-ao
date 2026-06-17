@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function calcularPesquisa() {
+    
     let totalPessoas = 20;
 
     let somaSalarioMasc = 0;
@@ -34,6 +35,7 @@ function calcularPesquisa() {
     let totalMulheres = 0;
 
     for (let i = 1; i <= totalPessoas; i++) {
+
         let idade = Number(document.getElementById(`idade${i}`).value);
         let sexo = document.getElementById(`sexo${i}`).value;
         let renda = Number(document.getElementById(`renda${i}`).value);
@@ -47,6 +49,7 @@ function calcularPesquisa() {
             }
         } else if (sexo === "F") {
             totalMulheres++;
+
             if (renda >= 1000 && renda <= 3000) {
                 qtdMulheresRendaEspecifica++;
             }

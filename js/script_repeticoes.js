@@ -31,7 +31,19 @@ btnNum.addEventListener('click', (evt) => {
 
 //CONTROLANDO FOR
 
-const inputFrase = document.querySelector ('#frase')
-const inputNumRepeticao = document.querySelector ('#num-repeticao')
-const btnFrase = document.querySelector ('#btn-frase')
-const divFrase = document.querySelector ('#div-frase')
+const inputFrase = document.querySelector('#frase')
+const inputNumRepeticao = document.querySelector('#num-repeticao')
+const btnFrase = document.querySelector('#btn-frase')
+const divFrase = document.querySelector('#div-frase')
+
+btnFrase.addEventListener('click', (evt) =>{
+    let frase = inputFrase.value
+    let repeticoes = Number(inputNumRepeticao.value)
+
+divFrase.innerHTML
+
+for (let i =0; i<repeticoes; i++){
+divFrase.innerHTML += frase + "<br>"
+}
+
+})

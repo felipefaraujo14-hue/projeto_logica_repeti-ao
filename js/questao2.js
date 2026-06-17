@@ -1,9 +1,13 @@
-let numero = Number(prompt("Digite um número:"));
+function verificar() {
+    let numero = Number(document.getElementById("numero").value);
+    let divisores = "";
 
-console.log("Divisores de", numero);
-
-for (let i = 1; i <= numero; i++) {
-    if (numero % i === 0) {
-        console.log(i);
+    for (let i = 1; i <= numero; i++) {
+        if (numero % i === 0) {
+            divisores += i + " ";
+        }
     }
+
+    document.getElementById("resultado").innerHTML =
+        "Divisores de " + numero + ": " + divisores;
 }

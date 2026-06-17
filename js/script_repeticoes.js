@@ -47,3 +47,12 @@ divFrase.innerHTML += frase + "<br>"
 }
 
 })
+
+//Coleçao de dados
+
+const presentes = ('bicicleta', 'celular','camisa do mengao', 'doleira', 'tenis da adidas')
+const divArray = document.querySelector('#div-array')
+
+for(i = 0;i<5;i++){
+   divArray.innerHTML += '${presentes[i]}<br>'
+}
